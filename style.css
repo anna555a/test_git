@@ -1,0 +1,36 @@
+body {
+	margin: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 1140px;
+	min-height: 100vh;
+	margin: 0 auto;
+}
+
+.header {
+	background-color: #66CDAA;
+}
+
+.main-menu {
+	background-color: #7986CB;
+}
+
+
+.section {
+	background-color: #29B6F6;
+}
+
+.sidebar {
+	background-color: #80CBC4;
+}
+
+.footer {
+	background-color: #66CDAA;
+}
+

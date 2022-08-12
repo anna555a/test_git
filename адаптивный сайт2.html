@@ -6,24 +6,26 @@
         <title>Адаптивная веб-страница</title>
          
         <style>
-        body {
-            background-color: red;
-        }
+		div#b {width: 90%;}
+		div#b {background-color: blue;}
+        
         /* для планшетов и фаблетов */
-        @media (min-width: 481px) and (max-width:768px) {
-            body {
-                background-color: green;
-            }
+        @media (min-width: 480px) and (max-width:480px) {
+            
+			div#a {background-color: green;}
+			div#a {width: 400px;}
         }
         /* для декстопов */
-        @media (min-width:769px) {
-            body {
-                background-color: blue;
-            }
+        @media (min-width:480x) {
+           
+			div#a {background-color: blue;}
+			div#a {width: 700px;}
         }
 </style>
     </head>
     <body>
         <h2>Адаптивная веб-страница</h2>
+		<div id="a">один</div>
+		<div id="b">два</div>
     </body>
 </html>
