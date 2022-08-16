@@ -3,9 +3,6 @@ body{
   background: linear-gradient(to top, white, lightblue);
 }
   
-@media (min-width:480x) {
-    div#a {width: 480px;}
- }
 
 ul{
 display: flex;
@@ -23,22 +20,13 @@ display: flex;
   margin: auto;
   position: relative;
 }
-.header {
-  margin-left: 25%;
-  margin-right:25%;
-  height: 100px;
-	display: flex;
-  flex-wrap: wrap;
-	justify-content: space-between;
-	padding: 20px;
 
-}
 .klyaksa-main{
     position: absolute;
     opacity: 0.4;
     width: 100%;
 }
-.nav{
+nav{
   width: 75%;
   display: flex;
   flex-wrap: wrap;
@@ -46,6 +34,7 @@ display: flex;
   justify-content: flex-end;
   align-items: flex-end;
 }
+
 
 .nav-list{
   order:2;
@@ -258,4 +247,25 @@ footer{
   font-family: Arial;
 
   color: white;
+}
+
+.header {
+  margin-left: 15%;
+  margin-right:15%;
+  height: 100px;
+	display: flex;
+  flex-wrap: wrap;
+	justify-content: space-between;
+  flex-direction: row;
+	padding: 20px;
+}
+
+
+@media (min-width:480px) and (max-width:720px){
+  div#a {width: 480px;}
+  .header{
+    flex-direction: column;
+    height: 150px;
+    
+  }
 }
