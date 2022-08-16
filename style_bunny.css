@@ -1,18 +1,9 @@
+/* -----------------------------------------*/
+/* Основа */
+/* -----------------------------------------*/
 body{
   margin:0;
   background: linear-gradient(to top, white, lightblue);
-}
-  
-@media (min-width:480x) {
-    div#a {width: 480px;}
- }
-
-ul{
-display: flex;
-}
-.logo {
-  display: flex;
- justify-content: center;
 }
 
 
@@ -22,23 +13,36 @@ display: flex;
   overflow: hidden;
   margin: auto;
   position: relative;
+
 }
-.header {
-  margin-left: 25%;
-  margin-right:25%;
-  height: 100px;
+/* -----------------------------------------*/
+/* Шапка */
+/* -----------------------------------------*/
+header {
+  margin-left:15%;
+  margin-right:15%;
+  height: 120px;
 	display: flex;
   flex-wrap: wrap;
 	justify-content: space-between;
+  flex-direction: column;
 	padding: 20px;
+}
 
+.hbar{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.klyaksa-main{
-    position: absolute;
-    opacity: 0.4;
-    width: 100%;
+
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  flex-basis: 30%;
 }
-.nav{
+
+nav{
   width: 75%;
   display: flex;
   flex-wrap: wrap;
@@ -47,7 +51,17 @@ display: flex;
   align-items: flex-end;
 }
 
-.nav-list{
+nav.a{
+  text-decoration: none;
+  font-family: Arial;
+  color: gray;
+  font-weight: 600;
+}
+nav.a:hover{
+  text-decoration: underline;
+}
+
+nav.ul{
   order:2;
   display: flex;
   height: 30px;
@@ -57,20 +71,10 @@ display: flex;
   text-align: center;
   list-style: none;
 }
-.nav-list li{
+
+nav.ul.li{
 	flex-grow: 1;
   border-right: 2px solid gray;
-}
-
-
-.nav a{
-  text-decoration: none;
-  font-family: Arial;
-  color: gray;
-  font-weight: 600;
-}
-.nav a:hover{
-  text-decoration: underline;
 }
 
 .searchBar{
@@ -114,6 +118,30 @@ display: flex;
   color:white;
   margin:0;
 }
+
+/* -----------------------------------------*/
+/*  */
+/* -----------------------------------------*/
+
+ul{
+  display: flex;
+}
+
+
+
+
+.klyaksa-main{
+    position: absolute;
+    opacity: 0.4;
+    width: 100%;
+}
+
+
+
+
+
+
+
 
 .main{
 display: flex;
@@ -219,12 +247,12 @@ footer{
 }
 .footer_slider{
   display: flex;
-     flex-wrap: wrap;
-     justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-     width: 80%;
-     margin: 50px auto 50px auto;
-     position: relative;
+  width: 80%;
+  margin: 50px auto 50px auto;
+  position: relative;
 }
 
 .footer_container{
@@ -259,3 +287,22 @@ footer{
 
   color: white;
 }
+/* -----------------------------------------*/
+/* Медиазапрос */
+/* -----------------------------------------*/
+@media (min-width:1100x) {
+  #a {width: 1100px;}
+  
+  header {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(243, 0, 0);
+    
+  }
+}
+/* -----------------------------------------*/
